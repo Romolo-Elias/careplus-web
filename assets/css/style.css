@@ -1,0 +1,66 @@
+:root {
+    --primary-color: hsl(195, 100%, 44%);
+    --secondary-color: #103269;
+    --description-color: #303a4a;
+    --back-ground-color : #f9f9f9;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--back-ground-color);
+    height: 100vh;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+.navbar {
+    background-color: var(--secondary-color);
+}
+
+
+.section-description {
+    color: var(--description-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.app-card {
+    background-color: white;
+    border-radius: 20px;
+    border: var(--primary-color) 1px solid ;
+    padding: 30px 25px;
+    box-shadow: 0 4px var(--primary-color);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.app-card-logo {
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.app-card-tittle {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.app-card-description {
+    color: var(--description-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.app-card-button {
+    color: var(--primary-color);
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
