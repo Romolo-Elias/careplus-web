@@ -3,6 +3,7 @@
     --secondary-color: #103269;
     --description-color: #303a4a;
     --back-ground-color : #f9f9f9;
+
 }
 
 body {
@@ -44,7 +45,7 @@ h2 {
     color: var(--primary-color);
 }
 
-.app-card-tittle {
+.app-card-title {
     color: var(--primary-color);
     font-size: 22px;
     font-weight: 600;
@@ -63,4 +64,45 @@ h2 {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.alerts-container {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.alert-danger {
+    border: 1px solid #dc3545;
+    box-shadow: 0 4px #dc3545;
+}
+
+.app-alert-card{
+    padding: 18px 20px;
+}
+
+.alert-danger .app-card-title,
+.alert-danger .app-card-logo {
+    color: #dc3545;
+}
+
+.alert-warning {
+    border: 1px solid #ffc107;
+    box-shadow: 0 4px #ffc107;
+}
+
+.alert-warning .app-card-title,
+.alert-warning .app-card-logo {
+    color: #ffc107;
+}
+
+.alert-sucess {
+    border: 1px solid #008000;
+    box-shadow: 0 4px #008000;
+}
+
+.alert-sucess .app-card-title,
+.alert-sucess .app-card-logo {
+    color: #008000;
 }
