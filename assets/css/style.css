@@ -106,3 +106,195 @@ h2 {
 .alert-sucess .app-card-logo {
     color: #008000;
 }
+
+.consultas-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.consulta-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: white;
+    border-radius: 20px;
+    border: var(--secondary-color) 1px solid ;
+    padding: 30px 25px;
+    box-shadow: 0 4px var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.consulta-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--secondary-color);
+}
+
+.consulta-card-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.consulta-btn-confirm {
+    border-color: #22c55e;
+    color: #22c55e;
+}
+
+.consulta-btn-confirm:hover {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: white;
+}
+
+.consulta-btn-remarcar {
+    border-color: #f59e0b;
+    color: #f59e0b;
+}
+
+.consulta-btn-remarcar:hover {
+    background: #f59e0b;
+    border-color: #f59e0b;
+    color: white;
+}
+
+.consulta-btn-rota {
+    background: #0ea5e9;
+    border-color: #0ea5e9;
+}
+
+.consulta-btn-rota:hover {
+    background: #0284c7;
+    border-color: #0284c7;
+}
+
+.consulta-status.confirmed {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.consulta-status.pending{
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.consulta-status.canceled{
+    color: #dc3545;
+    font-weight: bold;
+}
+
+#profile {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.profile-header {
+    background: white;
+    border-radius: 24px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.profile-avatar {
+    font-size: 6rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d3b66;
+    margin-bottom: 10px;
+}
+
+.profile-email {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.profile-badge {
+    display: inline-block;
+    background: #e7f1ff;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    height: 100%;
+}
+
+
+.profile-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0d3b66;
+    margin-bottom: 25px;
+}
+
+.profile-card p {
+    color: #0d3b66;
+    margin-bottom: 25px;
+}
+
+
+.profile-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.profile-stat:last-child {
+    border-bottom: none;
+}
+
+.profile-stat span {
+    color: #6c757d;
+}
+
+.profile-stat strong {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+
+    .profile-header {
+        padding: 30px 20px;
+    }
+    .profile-avatar {
+        font-size: 5rem;
+    }
+
+    .profile-name {
+        font-size: 1.6rem;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions .btn {
+        width: 100%;
+    }
+}
