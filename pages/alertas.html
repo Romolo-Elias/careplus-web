@@ -18,154 +18,158 @@
 <body>
 
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand h1 text-white p-2" href="./index.html">
+        <a class="navbar-brand h1 text-white p-2" href="../index.html">
             Care Plus
         </a>
+
         <div class="mx-auto">
+
             <ul class="navbar-nav d-flex flex-row gap-3">
+
                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link text-white fw-bold">
+                    <a href="../index.html" class="nav-link text-white fw-bold">
                         <i class="bi bi-house-door-fill"></i>
                         Home
                     </a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="./pages/alertas.html" class="nav-link text-white fw-bold">
+                    <a href="./alertas.html" class="nav-link text-white fw-bold">
                         <i class="bi bi-bell-fill"></i>
                         Alertas
                     </a>
                 </li>
-                <li class="nav-item active">
-                    <a href="#" class="nav-link text-white fw-bold">
+
+                <li class="nav-item">
+                    <a href="./consultas.html" class="nav-link text-white fw-bold">
                         <i class="bi bi-calendar-fill"></i>
-                        Constultas
+                        Consultas
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a href="#" class="nav-link text-white fw-bold">
+                    <a href="./pontos.html" class="nav-link text-white fw-bold">
                         <i class="bi bi-star-fill"></i>
                         Pontos
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a href="#" class="nav-link text-white fw-bold">
-                        <i class="bi bi-trophy-fill"></i>
-                        Prêmios
+                    <a href="./perfil.html" class="nav-link text-white fw-bold">
+                        <i class="bi bi-person-fill"></i>
+                        Perfil
                     </a>
                 </li>
             </ul>
-
         </div>
     </nav>
 
-    <section id="alertas">
+    <main>
+
+        <section id="alertas">
+    
+            <div class="container">
+                <div class="text-center mb-5 mt-5">
+    
+                    <h2>Notificações</h2>
+    
+                    <p class="section-description">Alertas inteligentes para você não perder a sua consulta</p>
+    
+                </div>
+    
+                <div class="container">
+    
+                    <div class="alerts-container d-flex flex-column gap-4">
+    
+                        <div class="app-card app-alert-card alert-danger">
+    
+                            <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
+    
+                            <h3 class="app-card-title">
+                                Consulta cancelada
+                            </h3>
+    
+                            <p class="app-card-description">
+                                Sua consulta de hoje às 15:30 foi cancelada. Entre em contato para reagendar.
+                            </p>
+    
+                            <span class="alert-time">
+                                Agora mesmo
+                            </span>
+    
+                        </div>
+    
+                        <div class="app-card app-alert-card alert-success">
+    
+                            <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
+    
+                            <h3 class="app-card-title">
+                                Consulta confirmada
+                            </h3>
+    
+                            <p class="app-card-description">
+                                Sua consulta para amanhã às 14:00 foi confirmada com sucesso.
+                            </p>
+    
+                            <span class="alert-time">
+                                Hoje às 09:45
+                            </span>
+    
+                        </div>
+    
+                        <div class="app-card app-alert-card alert-warning">
+    
+                            <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
+    
+                            <h3 class="app-card-title">
+                                Trânsito intenso
+                            </h3>
+    
+                            <p class="app-card-description">
+                                Foi identificado trânsito no trajeto da sua consulta. Recomendamos sair com antecedência.
+                            </p>
+    
+                            <span class="alert-time">
+                                Há 10 minutos
+                            </span>
+    
+                        </div>
+    
+                        <div class="app-card app-alert-card alert-success">
+    
+                            <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
+    
+                            <h3 class="app-card-title">
+                                Consulta confirmada
+                            </h3>
+    
+                            <p class="app-card-description">
+                                Sua consulta de terça às 10:30 foi cancelada. Entre em contato para reagendar.
+                            </p>
+    
+                            <span class="alert-time">
+                                há 3 horas
+                            </span>
+    
+                        </div>
+    
+                    </div>
+        </section>
+
+    </main>
+
+    <footer class="app-footer">
 
         <div class="container">
-            <div class="text-center mb-5 mt-5">
 
-                <h2>Notificações</h2>
+            <p class="footer-text">
 
-                <p class="section-description">Alertas inteligentes para você não perder a sua consulta</p>
+                © Gestão inteligente de consultas
 
-            </div>
+            </p>
 
-            <div class="container">
+        </div>
 
-                <div class="alerts-container d-flex flex-column gap-4">
+    </footer>
 
-                    <div class="app-card app-alert-card alert-danger">
-
-                        <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
-
-                        <h3 class="app-card-title">
-                            Consulta cancelada
-                        </h3>
-
-                        <p class="app-card-description">
-                            Sua consulta de hoje às 15:30 foi cancelada. Entre em contato para reagendar.
-                        </p>
-
-                        <span class="alert-time">
-                            Agora mesmo
-                        </span>
-
-                    </div>
-
-                    <div class="app-card app-alert-card alert-success">
-
-                        <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
-
-                        <h3 class="app-card-title">
-                            Consulta confirmada
-                        </h3>
-
-                        <p class="app-card-description">
-                            Sua consulta para amanhã às 14:00 foi confirmada com sucesso.
-                        </p>
-
-                        <span class="alert-time">
-                            Hoje às 09:45
-                        </span>
-
-                    </div>
-
-                    <div class="app-card app-alert-card alert-warning">
-
-                        <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
-
-                        <h3 class="app-card-title">
-                            Trânsito intenso
-                        </h3>
-
-                        <p class="app-card-description">
-                            Foi identificado trânsito no trajeto da sua consulta. Recomendamos sair com antecedência.
-                        </p>
-
-                        <span class="alert-time">
-                            Há 10 minutos
-                        </span>
-
-                    </div>
-
-                    <div class="app-card app-alert-card alert-danger">
-
-                        <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
-
-                        <h3 class="app-card-title">
-                            Consulta cancelada
-                        </h3>
-
-                        <p class="app-card-description">
-                            Sua consulta de hoje às 15:30 foi cancelada. Entre em contato para reagendar.
-                        </p>
-
-                        <span class="alert-time">
-                            Agora mesmo
-                        </span>
-
-                    </div>
-
-                    <div class="app-card app-alert-card alert-danger">
-
-                        <i class="bi bi-exclamation-triangle-fill app-card-logo"></i>
-
-                        <h3 class="app-card-title">
-                            Consulta cancelada
-                        </h3>
-
-                        <p class="app-card-description">
-                            Sua consulta de hoje às 15:30 foi cancelada. Entre em contato para reagendar.
-                        </p>
-
-                        <span class="alert-time">
-                            Agora mesmo
-                        </span>
-
-                    </div>
-
-
-                </div>
-    </section>
 
     <script src="./assets/js/script.js"></script>
 </body>

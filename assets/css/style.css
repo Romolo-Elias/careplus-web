@@ -2,14 +2,20 @@
     --primary-color: hsl(195, 100%, 44%);
     --secondary-color: #103269;
     --description-color: #303a4a;
-    --back-ground-color : #f9f9f9;
-
+    --back-ground-color: #f9f9f9;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--back-ground-color);
     height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 h2 {
@@ -18,11 +24,9 @@ h2 {
     font-size: 45px;
 }
 
-
 .navbar {
     background-color: var(--secondary-color);
 }
-
 
 .section-description {
     color: var(--description-color);
@@ -33,7 +37,7 @@ h2 {
 .app-card {
     background-color: white;
     border-radius: 20px;
-    border: var(--primary-color) 1px solid ;
+    border: var(--primary-color) 1px solid;
     padding: 30px 25px;
     box-shadow: 0 4px var(--primary-color);
     transition: all 0.3s ease;
@@ -78,7 +82,7 @@ h2 {
     box-shadow: 0 4px #dc3545;
 }
 
-.app-alert-card{
+.app-alert-card {
     padding: 18px 20px;
 }
 
@@ -107,7 +111,7 @@ h2 {
     color: #008000;
 }
 
-.consultas-list{
+.consultas-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -120,7 +124,7 @@ h2 {
     align-items: end;
     background-color: white;
     border-radius: 20px;
-    border: var(--secondary-color) 1px solid ;
+    border: var(--secondary-color) 1px solid;
     padding: 30px 25px;
     box-shadow: 0 4px var(--secondary-color);
     transition: all 0.3s ease;
@@ -177,12 +181,12 @@ h2 {
     font-weight: bold;
 }
 
-.consulta-status.pending{
+.consulta-status.pending {
     color: #f59e0b;
     font-weight: bold;
 }
 
-.consulta-status.canceled{
+.consulta-status.canceled {
     color: #dc3545;
     font-weight: bold;
 }
@@ -197,7 +201,7 @@ h2 {
     border-radius: 24px;
     padding: 40px 20px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     margin-top: 20px;
     margin-bottom: 40px;
 }
@@ -238,10 +242,9 @@ h2 {
     background: white;
     border-radius: 24px;
     padding: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     height: 100%;
 }
-
 
 .profile-card h3 {
     font-size: 1.3rem;
@@ -254,7 +257,6 @@ h2 {
     color: #0d3b66;
     margin-bottom: 25px;
 }
-
 
 .profile-stat {
     display: flex;
@@ -277,11 +279,199 @@ h2 {
     color: var(--primary-color);
 }
 
+
+.points-card {
+    background: white;
+    color: var(--secondary-color);
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #d8e3ee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 35px;
+}
+
+.points-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.points-value {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #e6edf5;
+}
+
+.progress-bar {
+    background: var(--primary-color);
+    border-radius: 999px;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7b8797;
+    font-weight: 600;
+}
+
+.points-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.history-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #d8e3ee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.history-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+
+.icon-positive {
+    background: #22c55e;
+}
+
+.icon-negative {
+    background: #ef4444;
+}
+
+.history-title {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 3px;
+}
+
+.history-date {
+    font-size: 13px;
+    color: #8b97a8;
+}
+
+.history-points-positive {
+    color: #22c55e;
+    font-weight: 700;
+}
+
+.history-points-negative {
+    color: #ef4444;
+    font-weight: 700;
+}
+
+
+.rewards-grid {
+    margin-top: 20px;
+}
+
+.reward-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #d8e3ee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.reward-icon {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.reward-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.reward-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.reward-description {
+    color: #7b8797;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.reward-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reward-points {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.reward-button {
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    padding: 6px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.reward-button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+
 @media (max-width: 768px) {
 
     .profile-header {
         padding: 30px 20px;
     }
+
     .profile-avatar {
         font-size: 5rem;
     }
@@ -297,4 +487,49 @@ h2 {
     .profile-actions .btn {
         width: 100%;
     }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .points-info {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .reward-footer {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .reward-button {
+        width: 100%;
+    }
+}
+
+.app-footer {
+
+    margin-top: 100px;
+
+    padding: 30px 0;
+
+    background: var(--secondary-color);
+
+    border-top: 1px solid #dee2e6;
+}
+
+
+.footer-text {
+
+    text-align: center;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
 }
